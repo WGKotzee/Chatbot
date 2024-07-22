@@ -38,15 +38,14 @@ function handleUserInput() {
     }, 500); // You can adjust the delay as needed
 }
 
-// Function to simulate bot responses (replace with your AI logic)
+// Function to simulate bot responses (replace with AI logic)
 function getBotResponse(userMessage) {
     // Here, you can implement your AI logic to generate bot responses based on user input.
     const lowerCaseMessage = userMessage.toLowerCase();
-    // For now, let's keep it simple and provide some predefined responses.
     // Define some keywords and their corresponding responses
     const responses = {
         'hello': 'Hello! How can I assist you?',
-        'hi': 'Hello! How can I assist you?',
+        'hi': 'Hello There!',
         'hi chatbot': 'Hello There!',
         'greetings': 'Hello! How can I assist you?',
         'how are you': 'I am just a computer program, but I am here to help you!',
@@ -55,9 +54,14 @@ function getBotResponse(userMessage) {
         'name': 'I am a chatbot. You can call me ChatBOT.',
         'weather': 'I can provide you with weather information. Please specify your location.',
         'time': `I can tell you the current time. It's ${new Date().toLocaleTimeString()}.`,
+        'date': `I can tell you today\'s date. It's ${new Date().toLocaleDateString()}.`,
         'thanks': 'You\'re welcome! If you have more questions, feel free to ask.',
+        'thank you': 'You\'re welcome! If you have more questions, feel free to ask.',
         'age': 'I am a computer program, so I don\'t have an age.',
         'who are you': 'I am ChatBOT, an AI chatbot created to assist with your questions.',
+        'established': 'My pragram was created in August 2023',
+        'created': 'My pragram was created in August 2023',
+        'smart': 'I\'m not really that smart at all, and only have a few phrases that I can say.'
     };
 
     // Check if any keyword is present in the user's message
